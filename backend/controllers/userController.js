@@ -232,7 +232,6 @@ const listAppointment = async (req, res) => {
 // API to make payment of appointment using razorpay
 const paymentRazorpay = async (req, res) => {
     try {
-
         const { appointmentId } = req.body
         const appointmentData = await appointmentModel.findById(appointmentId)
 
